@@ -1,0 +1,137 @@
+
+<!--* HW 2-->
+<!--* index-->
+<!--* Myron Williams-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grocery Shopping</title>
+    <style>
+        h2,h1{color: blue;}
+        h3{color: black;}
+        p{color: darkturquoise;}
+        #bottom{text-align: center;}
+        .button{background-color: #008CBA;}
+        form{text-align: center;align-content: center;}
+        table{align-items: center;}
+    </style>
+</head>
+<body>
+<h1>Let's help you shop!</h1>
+<h2>Pick the items you need, specify a quantity and then click submit.</h2>
+
+<form method="post" action="display_bill.php">
+   <p> What's your budget?<input type="text" name="budget"></input></p>
+    <h3>Grocery Items:</h3>
+
+    <table align="center">
+        <tr>
+            <td>
+                <img src="img/apple.png"/>
+
+
+                <strong>Quantity</strong>
+                <select name="apple">
+                    <option selected="selected" value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="0">0</option>
+                </select>
+            </td>
+            <td>
+                <img src="img/banana.png"/>
+
+
+                <strong>Quantity</strong>
+                <select name="banana">
+                    <option selected="selected" value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="0">0</option>
+                </select>
+            </td>
+            <td>
+                <img src="img/milk.png"/>
+
+                <strong>Quantity</strong>
+                <select name="milk">
+                    <option selected="selected" value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="0">0</option>
+                </select>
+            </td>
+            <td>
+                <img src="img/cake.png"/>
+
+                <strong>Quantity</strong>
+                <select name="cake">
+                    <option selected="selected" value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="0">0</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/toast.png"/>
+
+                <strong>Quantity</strong>
+                <select name="toast">
+                    <option selected="selected" value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="0">0</option>
+                </select>
+            </td>
+            <td>
+                <img src="img/cheese.png"/>
+
+                <strong>Quantity</strong>
+                <select name="cheese">
+                    <option selected="selected" value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="0">0</option>
+                </select>
+            </td>
+            <td>
+                <img src="img/cookie.png"/>
+
+                <strong>Quantity</strong>
+                <select name="cookie">
+                    <option selected="selected" value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="0">0</option>
+                </select>
+            </td>
+            <td>
+                <img src="img/water.jpg" width="128px" height="128px"/>
+
+                <strong>Quantity</strong>
+                <select name="water">
+                    <option selected="selected" value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="0">0</option>
+                </select>
+            </td>
+        </tr>
+
+
+    </table>
+    <div id="bottom">
+        <img src="img/cart.png"/>
+
+        <br>
+
+        <input type="submit" value="Calculate Bill!" class="button">
+        <input type="reset" value="Clear!" class="button">
+    </div>
+</form>
+</body>
+</html>
